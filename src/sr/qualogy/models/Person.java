@@ -1,9 +1,14 @@
 package sr.qualogy.models;
 
-public interface  Person {
-     void getKnowledge();
+public abstract class  Person {
+     protected String fullname;
+     public abstract void getKnowledge();
 
-     void makeExam();
+     public abstract void makeExam();
+
+     public String getFullname() {
+          return fullname;
+     }
 }
 
 
